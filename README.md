@@ -3,3 +3,4 @@ Script python permettant de redimensionner et compresser des multiples images en
 
 TODO :
 Essayer le mode graphique
+test
