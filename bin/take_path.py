@@ -2,15 +2,13 @@ from tkinter import *
 from tkinter.filedialog import askdirectory
 import os
 
-
+directory_name = ""
 
 def folder_name():
-
+    global directory_name, label_directory_path
     directory_name = askdirectory()
-    return directory_name
 
 def fenetre():
-
     # Initialisation fenêtre
     fenetre = Tk()
     fenetre.wm_title("Image Resize")
@@ -21,6 +19,9 @@ def fenetre():
 
     recherche_dossier = Button(fenetre, text="Parcourir", command=folder_name)
     recherche_dossier.pack()
+
+    #label_directory_path = Label(fenetre, text=directory_name)
+    #label_directory_path.pack()
 
     bout_quit=Button(fenetre, text='Quitter', command = fenetre.destroy)
     bout_quit.pack()
