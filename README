@@ -1,1 +1,6 @@
 Script permettant de resize des images dans un dossier et de les compresser.
+
+
+TODO :
+
+- Gérer dans take_path la mise à jour du label label_directory_path
